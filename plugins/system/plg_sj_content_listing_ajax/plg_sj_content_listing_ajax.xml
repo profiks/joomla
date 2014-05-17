@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_plg_sj_content_listing_ajax</name>
+	<author>YouTech Company</author>
+	<creationDate>November 2013</creationDate>
+	<copyright>Copyright (c) 2009-2013 YouTech Company. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0.0</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="plg_sj_content_listing_ajax">plg_sj_content_listing_ajax.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>assets</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_plg_sj_content_listing_ajax.ini</language>
+		<language tag="en-GB">en-GB.plg_system_plg_sj_content_listing_ajax.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="limit"  type="text" size="25" default="4" label="Item Count" description="Item Count. [2:53:48 PM] Me Ngọt: If the value is 0, the default configuration of component will be used" />
+				<field type="spacer" name="myspacer1" label="&lt;b&gt;Class for Items Leading&lt;/b&gt;" />
+				<field name="cls_items_leading1"  type="text" size="25" default=" items-leading " label="Class Name 1" description="Class for Items Leading" />
+				<field name="cls_items_leading2"  type="text" size="25" default=" item " label="Class Name 2" description="Class for Items Leading" />
+				<field type="spacer" name="myspacer2" label="&lt;b&gt;Class for Items Row&lt;/b&gt;" />
+				<field name="cls_items_row1"  type="text" size="25" default="items-row" label="Class Name 1" description="Class for Items Row" />
+				<field name="cls_items_row2"  type="text" size="25" default="item" label="Class Name 2" description="Class for Items Row" />
+				<field type="spacer" name="myspacer3" label="&lt;b&gt;Class for Items More&lt;/b&gt;" />
+				<field name="cls_items_more"  type="text" size="25" default="items-more" label="Class Name" description="Class for Items More" />
+				<field name="path_blog_category" type="text" default="" label="Path Template for Category Blog" description="Enter path of template for Category Blog. Example :templates/protostar/html/com_content/category" />	
+				<field name="patt_blog_featured" type="text" default="" label="Path Template for Featured Articles" description="Enter path of template for Featured Articles. Example :templates/protostar/html/com_content/featured" />
+				<field name="display_pagination"  type="radio" class="btn-group" default="0" label="Display Pagination" description="Allow show/hide pagination">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="include_jquery"  type="radio" class="btn-group" default="0" label="Include jQuery" description="Do you want include jQuery?">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>
+		 
+	</config>
+</extension>

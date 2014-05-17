@@ -1,0 +1,30 @@
+// --* Show Templates IE9  *----------------------
+// -----------------------------------------------
+/*   1.LTR Languages
+ *   2.RTL Languages
+ *   
+ */
+
+//1.LTR Languages
+// --------------------------------------------------
+    .ezb-mod .mod-avatar{width: 40px;}
+    .account .ezb-mod #form-login .inputbox{height: 15px;}
+	#form-login-remember {
+		label{width: auto; display: inline-block;}
+		input{margin-top: -2px;}
+	}
+    .account .ezb-mod #form-login-remember #modlgn_remember{padding-left: 0;}
+//2.RTL Languages
+// --------------------------------------------------
+.rtl {
+    .yt-list.type-disc li:before{display: inline-block; margin: 0 0 0 10px;}
+    .module.slider{direction: ltr;
+		.carousel-caption{direction: rtl;}
+	}
+    #yt_menuposition ul.navirtl > li.level1{direction: ltr;
+		.item-link{direction: ltr; text-align: right;}
+	    li.level2{direction: rtl;}
+    }
+    .module.bg-content1 h3.modtitle{background: transparent;}
+    .row-fluid .first[class*="span"] {margin: 0;}
+}

@@ -1,0 +1,127 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.theme-color {
+  background-color: #CCC;
+}
+.theme-color.cyan {
+  background-color: #00a68e;
+}
+.theme-color.blue {
+  background-color: #58bee7;
+}
+.theme-color.orange {
+  background-color: #ffb80e;
+}
+.theme-color.green {
+  background-color: #8eb748;
+}
+.body-backgroud-image .pattern1,
+#jform_params_bgimage_pattern .pattern1 {
+  background-image: url(../images/pattern/body/pattern1.png);
+}
+.body-backgroud-image .pattern2,
+#jform_params_bgimage_pattern .pattern2 {
+  background-image: url(../images/pattern/body/pattern2.png);
+}
+.body-backgroud-image .pattern3,
+#jform_params_bgimage_pattern .pattern3 {
+  background-image: url(../images/pattern/body/pattern3.png);
+}
+.body-backgroud-image .pattern4,
+#jform_params_bgimage_pattern .pattern4 {
+  background-image: url(../images/pattern/body/pattern4.png);
+}
+.body-backgroud-image .pattern5,
+#jform_params_bgimage_pattern .pattern5 {
+  background-image: url(../images/pattern/body/pattern5.png);
+}
+.body-backgroud-image .pattern6,
+#jform_params_bgimage_pattern .pattern6 {
+  background-image: url(../images/pattern/body/pattern6.jpg);
+  background-size: auto 100%;
+}
+.body-backgroud-image .pattern7,
+#jform_params_bgimage_pattern .pattern7 {
+  background-image: url(../images/pattern/body/pattern7.jpg);
+  background-size: auto 100%;
+}
+.body-backgroud-image .pattern8,
+#jform_params_bgimage_pattern .pattern8 {
+  background-image: url(../images/pattern/body/pattern8.jpg);
+  background-size: auto 100%;
+}
+#bd.pattern1 {
+  background-image: url(../images/pattern/body/pattern1.png);
+}
+#bd.pattern2 {
+  background-image: url(../images/pattern/body/pattern2.png);
+}
+#bd.pattern3 {
+  background-image: url(../images/pattern/body/pattern3.png);
+}
+#bd.pattern4 {
+  background-image: url(../images/pattern/body/pattern4.png);
+}
+#bd.pattern5 {
+  background-image: url(../images/pattern/body/pattern5.png);
+}
+#bd.pattern6 {
+  background-image: url(../images/pattern/body/pattern6.jpg);
+  background-attachment: fixed;
+}
+#bd.pattern7 {
+  background-image: url(../images/pattern/body/pattern7.jpg);
+  background-attachment: fixed;
+}
+#bd.pattern8 {
+  background-image: url(../images/pattern/body/pattern8.jpg);
+  background-attachment: fixed;
+}
+.pattern-wrap .pattern {
+  height: 22px;
+  width: 30px;
+  float: left;
+  text-indent: -999em;
+  margin: 0 5px 0 0;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+  -moz-box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5) inset;
+}
+.pattern-wrap .pattern.active {
+  border: 1px solid rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset, 0 0 0 2px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset, 0 0 0 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4) inset, 0 0 0 2px rgba(0, 0, 0, 0.08);
+  background-color: #eee;
+}

@@ -1,0 +1,42 @@
+.ezb-mod .mod-avatar {
+  width: 40px;
+}
+.account .ezb-mod #form-login .inputbox {
+  height: 15px;
+}
+#form-login-remember label {
+  width: auto;
+  display: inline-block;
+}
+#form-login-remember input {
+  margin-top: -2px;
+}
+.account .ezb-mod #form-login-remember #modlgn_remember {
+  padding-left: 0;
+}
+.rtl .yt-list.type-disc li:before {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+.rtl .module.slider {
+  direction: ltr;
+}
+.rtl .module.slider .carousel-caption {
+  direction: rtl;
+}
+.rtl #yt_menuposition ul.navirtl > li.level1 {
+  direction: ltr;
+}
+.rtl #yt_menuposition ul.navirtl > li.level1 .item-link {
+  direction: ltr;
+  text-align: right;
+}
+.rtl #yt_menuposition ul.navirtl > li.level1 li.level2 {
+  direction: rtl;
+}
+.rtl .module.bg-content1 h3.modtitle {
+  background: transparent;
+}
+.rtl .row-fluid .first[class*="span"] {
+  margin: 0;
+}

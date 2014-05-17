@@ -1,0 +1,250 @@
+// --* Bonus Pages Templates *------------------
+// ---------------------------------------------
+/*   1.Page Join Now
+ *   2.Page About us
+ *   3.Page Services
+ *   4.Page portfolio
+ *   5.Page What's new
+ *   6.Testimonial
+ *   7.Photo Gallery
+ */
+
+
+.b-block:after,
+.b-block:before{clear: both;display: table;content: "";}
+
+// 1.Page Join Now
+.join-now {
+       h2{font-weight: 300;margin-bottom: 30px;
+              
+              a{font-size: 24px;font-weight: 300;color: #666;text-transform: uppercase; background: url("../images/icon_about.png") no-repeat left center scroll transparent;padding-left: 40px;
+                     &:hover{color: @linkColor}
+              }
+       }
+}
+
+ul.c-step{list-style: none;margin: 0 auto 4em auto; counter-reset: section;display: table;position: relative;z-index: 1;
+    &:before{content: "";width:100%;height: 10px;background: #DEDEDE;
+        position: absolute;z-index: 2;left: 0;top: 50%;margin-top: -5px;
+        .border-radius(10px); .box-shadow(1px 1px 1px rgba(0,0,0,0.1) inset);
+    }
+    li{list-style: none;margin: 0 50px;padding-top: 50px;line-height: 25px;display: inline-block;position: relative;z-index: 3;text-align: center;
+        &:before,
+        &.active:before{
+               counter-increment:section; content: counter(section);
+               width:35px;height: 35px;line-height: 35px;
+               font-size: 20px;font-weight: 800;text-align: center;display: inline-block;
+               color: #fff;
+               .border-radius(35px);.box-shadow(~"0 1px 1px 0px rgba(0, 0, 0, 0.3) inset, 0 0 0 4px #DEDEDE");#gradient .vertical( #AAC3BF ,#719088);
+        }
+        &.active:before{#gradient .vertical(lighten(@linkColor, 10%),@linkColor);}
+        &.active{
+            h3{color: @linkColor;}
+        }
+        h3{margin: 10px 0 0;font-size: 16px;}
+        span{font-size: 13px;}
+    }
+}
+.table-underline{
+        thead{border-bottom: 2px solid #404040;font-size: 14px;  #gradient .vertical(#F5F5F5,#CCCCCC);}
+        tbody{
+          tr:hover{background: #FAFFED;}
+        }
+}
+
+// 2.Page About us
+.about-page{
+       h2{font-weight: 300;margin-bottom: 30px;
+            
+              a{font-size: 24px;font-weight: 300;color: #666;text-transform: uppercase; background: url("../images/icon_about.png") no-repeat left center scroll transparent;padding: 0 35px;
+                     &:hover{color: @linkColor}
+              }
+       }
+       div.g-pageteam{line-height: 22px;
+       hr{height: 5px;background: #ccc;}
+       .yt-lightbox.image-right{float: left; margin: 0 20px 20px 0;}
+       .b-gettouch{background: #eee;border-bottom: 3px solid #ccc;border-right:1px solid #ccc;padding: 20px; margin: 1em 0 4em; .box-sizing(border-box);
+           .h-heading4{font-size: 130%;font-weight: normal;line-height: 24px;margin: 0;font-family: "Georgia";font-style: italic;}
+           .btn{height: 35px; line-height: 35px;overflow: hidden;text-overflow: ellipsis;
+                 &:active{vertical-align: -16px;}
+           }
+       }
+       .content-about{margin-top: 20px;
+            .content{ overflow: hidden; margin-bottom: 30px;
+                     .fa{float: left;height: 100px;width: 82px;padding-left: 18px; margin-right: 15px;margin-top: 3px;display:block;line-height:100px;text-align:center;border-radius:10px;color:#fff;background:@linkColor; 
+                       &:hover{background: darken(@linkColor,10%); cursor: pointer;}
+                     }
+                     h3 {font-weight: 300;margin-bottom: 15px;
+                            a{font-weight: 300;font-size: 16px;color: #666;
+                                   &:hover{color: @linkColor}
+                            }
+                     }
+                     p{}
+                       }
+              }
+       }
+}
+
+
+// 3.Page Services
+.page-service{
+       h2{font-weight: 300;margin-bottom: 30px;
+              a{font-size: 24px;font-weight: 300;color: #666;text-transform: uppercase; background: url("../images/icon_about.png") no-repeat left center scroll transparent; padding: 0 30px;
+                     &:hover{color: @linkColor}
+              }
+       }
+       .testimonial{
+              
+       }
+}
+#g-pageservices{
+     .fa{
+          background: @linkColor;height: 64px;width:64px;text-align: center;line-height: 64px;border: 3px solid #eee;
+          .border-radius(64px);
+     }
+     article{overflow: hidden;
+          h3{font-size: 130%;}
+          a.detail{font-size: 13px;
+              &:after{content: "\f105";font-family: FontAwesome;display: inline-block;color: #fff;background: @linkColor;margin: -3px 3px 0;height:14px; width:14px;line-height: 14px;  text-align: center;.border-radius(14px);}
+              &:hover{
+                   &:after{color: #fff;}
+              }
+               
+          }
+     }
+     h2{font-size: 180%;margin-bottom: 1em;}
+     hr{height: 5px;background: #eee;border-top-color: #ddd;margin: 3em 0;}
+     .testimonial-avatar{
+          [class^="icon-"], [class*=" icon-"]{border: none;}
+     }
+}
+
+
+
+//3.1 Page break
+.page-break{
+       .tabs{margin-top: 40px!important;}
+}
+// 4.Page portfolio
+#g-pageportfolio{
+     [class*="span"]{position: relative; top: 0;background: #F9F9F9; .transition(all 0.2s ease 0s);border: 1px solid #ddd;.box-sizing(border-box);
+          .box-shadow(~"1px 1px 0  #FFFFFF inset,1px 0 0 #D8D8D8, 0 1px 0 #E5E5E5, 2px 1px 0 #D8D8D8, 1px 2px 0 #E5E5E5, 3px 2px 0 #D8D8D8, 2px 3px 0 #E5E5E5, 4px 3px 0 #D8D8D8, 4px 3px 0 #eee, 4px 3px 0 #E5E5E5, 4px 4px 0 #E5E5E5");
+          .port-item-img{position: relative;display: block;padding: 10px 10px 0;overflow: hidden;border-right: none;
+               .yt-lightbox{margin: 0;padding: 0;background: #000;border: none;position: relative;
+                    &:before{content: "";position: absolute;left: 0;top: 0;z-index: 1;width:100%;height: 100%;box-shadow: 0 0 4px #222 inset;}
+                    img{.transition(all 0.3s ease);}
+               }
+               
+               .icon-plus-sign{font-size: 4px;color: #eee;position: absolute;left: 50%;bottom:-100%;z-index: 10;margin:  0  0 -19px -22px;width:40px;text-align: center;
+                    .transition(all 0.8s ease-in-out 0s) ;.opacity(0); 
+               }
+               //Hover Images
+               &:visited{
+                    .icon-plus-sign{ bottom: 100%;}
+               }
+               &:hover{
+                    img{.opacity(70);} 
+                   .icon-plus-sign{ bottom: 50%;font-size: 45px;.opacity(100);}
+               }
+              
+          }
+          
+          .port-item-content{padding: 10px;
+               h4{margin-bottom: 10px;font-size: 110%;}
+               p{margin-bottom: 5px;}
+               a.detail{display: inline-block;margin-top: 1em;
+                    &:after{
+                            content: "\f105";font-family: FontAwesome;background: @linkColor;margin: -3px 3px 0;
+                            height:14px; width:14px;line-height: 14px;  text-align: center;.border-radius(14px);
+                            color: @white;display: inline-block;
+                    }
+                    &:hover{
+                         &:after{color: #fff;}
+                    }
+               
+               }
+          }
+          //Hover Portfolio
+          &:hover{top: 4px;.box-shadow(none);}
+     }
+     
+}
+// 5.Page What's new
+#g-pagewhatnew{
+       .yt-lightbox.image-none{padding: 3px;background: #fff;.box-shadow(0 0 5px rgba(0, 0, 0, 0.1));display: block;margin: 0 auto 10px;}
+        h3.title{margin-bottom: 1em;border-bottom: 1px solid #eee;padding-bottom: 5px;font-size: 180%;}
+       .yt-lightbox a  img{width: auto;}
+             
+}
+
+// 6.Testimonial
+
+.testimonial{
+       h3.title{font-size: 24px;text-transform: uppercase;color: #666;font-weight: 300;}
+       .yt-testimonial.tm-avatar{float: left;margin:0 30px 40px 0; padding: 0; border: 0; border-top: 0; position: inherit;
+              &:before{display: none;}
+              &:after{display: none;}
+           .content-testimonial{margin-bottom: 13px;
+              .content-text{border:solid 1px #e9e9e9;border-radius:15px;padding: 20px 25px 20px 35px;background: url("../images/bg_content_text.png") no-repeat 10px 20px scroll #fff;color: #909090;font-style: italic;}
+              .content-bottom {height: 16px;background: url("../images/bg_bottom_content_text.png") no-repeat 40px bottom scroll transparent;margin-top:-1px;}
+           }
+           .testimonial-avatar{position: inherit;
+                     img{border: none;border-radius: 0;}
+              } 
+       }
+}
+
+// 7.Photo Gallery
+.gallery {
+       .tabs{ border:0; margin:0 0 10px 0;
+              .tabs{ margin-right: 10px;
+                     h3 { background: #f5f5f5; border-bottom-color: 0; padding: 0; border: 0; font-size: 16px;
+                            a{ font-size: 16px; color: #666;font-weight: 300;background: url("../images/icons/list-style.png") no-repeat 15px center scroll #ffffff;border-radius:20px;
+                     border: solid 1px #e4e4e4; display: block; padding: 8px 18px 9px; padding-left:30px;margin: 0px;transition: 0.3s all ease 0;
+                                   &:hover{background: url("../images/icons/arrow_tabs-hover.png") no-repeat 15px center scroll @background1;border-color: @background1;color: #fff;}
+                                                                  
+                            }
+                     }
+              }
+              .open h3 a{background: url("../images/icons/arrow_tabs-hover.png") no-repeat 15px center scroll @background1;border-color: @background1;color: #fff;text-shadow: none;box-shadow: none}
+       }
+}
+
+
+// Support RTL Languages
+// --------------------------------------------------
+.rtl{
+       #g-pageportfolio [class*="span"] .port-item-content a.detail:after,
+       #g-pageservices article a.detail:after{content: "\f104";}
+
+}
+
+// Support Responsive
+// --------------------------------------------------
+
+//Tablet portrait (768x1024) && Small tablet landscape (800x600) 
+@media (min-width: 768px) and (max-width: 979px) {
+     // Page Join Now
+       ul.c-step{
+          li{margin: 0 30px;}
+       }
+       #g-pagewhatnew .yt-lightbox.image-none{display: block;}
+}
+
+// Small tablet portrait (600x800) & Mobile landscape (480x320)
+@media (max-width: 767px){
+       .yt-lightbox{float: none !important;}
+       #g-pageservices .span4{margin-bottom: 2em !important;}
+       #g-pageportfolio [class*="span"]{margin-bottom: 1em !important;
+              .port-item-img{display: inline-block;}
+       }
+       #g-pagewhatnew .yt-lightbox.image-none{display: block;}
+       
+       .yt-gallery ul li{width:auto !important;}
+       ul.c-step{
+              &:before{top:37%;}
+              li{ display: table-cell;padding-top: 35px;}
+       }
+       div.yt-lightbox.image-left{float: none;display: inline-block;margin: 0 0 15px;}
+       div.g-pageteam div.b-ourteam [class*="span"]{margin-bottom: 30px !important;}
+}

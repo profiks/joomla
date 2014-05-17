@@ -1,0 +1,457 @@
+@import "../asset/bootstrap/less/mixins.less";
+@import "../asset/bootstrap/less/variables.less";
+@import "color/variables_color.less";
+@import "../asset/bootstrap/less/bootstrap-rtl.less";
+
+// --* RTL Language Templates *------------------
+// ---------------------------------------------
+/*   1.System Tool
+ *   2.Page Structure
+ *   3.Joomla Base & Component Joomla
+ *   4.Custom Module
+ *   5. k2
+ */
+
+.rtl{
+     // 1.SYSTEM TOOL
+     // --------------------------------------------------
+     #yt_tool_bottom .module .btn-special{padding: 0 5px;}
+     .backtotop{right: auto;left: 10px;
+          i{margin: 8px 0 0;}
+     }
+     dd{margin-right: 0;}
+	 .yt-boxquote{text-align: right;}
+     &#bd table td{text-align: right;}
+	 .mod_easyblogarchive .mod-months .mod-month{padding: 3px 24px 3px 0;}
+	 .blog-archive .mod-year a{background-position: right center;}
+	 .blog-archive .mod-month{background-position: right center;}
+	 #top1, #flag{float: right;}
+	 #top2{float: left;}
+     // 2.PAGE STRUCTURE 
+     // --------------------------------------------------
+     #breadcrumb div.module ul.breadcrumb li .divider{ background: url("../images/rtl/breadcrumb_separate.png") no-repeat scroll right 80% transparent;}    
+     
+     //Login
+	 #yt_top .yt-loginform > li .modal .form-inline .control-group{
+		#modlgn-username, #modlgn-passwd{background-position: 95% center; padding: 0 45px 0 0;}
+	}
+     #yt_top ul.yt-loginform{float: right;
+          > li{float: right; margin: 0; margin-left: 15px;
+             > a {padding: 0px;
+				 &:before{margin-right: 0; margin-left: 7px;}
+				 &:hover:before{margin-right: 0; margin-left: 3px;}
+			 }  
+          }
+     }
+      #yt_top .yt-loginform > li .modal{
+		background-position: 95% 10px;
+		padding: 10px 200px 10px 10px;
+		.form-inline {
+			.control-group {
+				#modlgn-remember,.control-label{float: right; margin-right: 0; margin-left: 5px;}
+			}
+			ul.listlogin li a{background-position: right center; padding: 0 20px 0 0;}
+		}
+		a.modal-close{left: -10px; right: auto;}
+		
+	}
+     // 3.JOOMLA BASE & COMPONENT JOOMLA
+     // --------------------------------------------------
+     [class^="icon-"], [class*=" icon-"]{margin: 0 0 0 5px;}     
+
+     // Category Blog
+     .blog,.blog-featured{
+          .items-leading .item,
+          .items-row .item{
+               .item-image{margin: 0 0 10px 20px;}
+          }
+     }
+      .blog{
+          .items-row{
+                &.cols-2,&.cols-3,&.cols-4{
+                    .item{margin-left: 0!important; margin-right: 13px!important;}
+                }
+          }
+      }
+     div.tag-category ul.items-row li.item .item-image{margin: 0 0 10px 20px;}
+     
+     //Single Article
+     .item-page {
+          .article-info {
+               ul.actions{float: left;}
+               
+          }
+         
+          .img-fulltext.pull-left{margin: 0 0 1em 1em;}
+          .img-fulltext.pull-right{margin: 0 1em 1em 0;}
+          .vote-info .content_vote label.unseen{margin-left: 10px; }
+     }
+    
+     
+     // Category List
+    
+     // Page Break
+     dl.tabs dt{float: right;}
+     
+     // Search Component
+     .search #searchForm .phrases-box input, .search #searchForm .only input{float: right;margin: 4px 0 0 5px;}
+     
+     // Smart Search Component
+     #advanced-search{text-align: right;}
+     
+     // Page Email & Print
+     &.contentpane {
+          #mailto-window .mailto-close{left: 40px;right: auto;}
+          .row-fluid [class*="span"]:first-child{margin-right: 0;}
+          .row-fluid [class*="span"]{margin: 0;margin-right: 2.12766%;float: right;}
+     }
+     
+     //Contact Component
+     div.contact .contact-image{float: left;}
+    
+     // User Component
+     &.view-login .wrap-login .form-horizontal .control-group{float: right;}
+     &.view-login .wrap-login .other-link ul.yt-list li{float: right;margin: 0 0 0 25px;}
+     .registration .form-horizontal .control-label{text-align: right;}
+          
+          
+     // 4.MODULE
+     // --------------------------------------------------
+     /*MODULE JOOMLA DEFAULT*/
+         
+          
+     /*MODULE  VARIATIONS*/
+     
+         
+     /* MODULE XHTML */
+          
+      /* NEWSLETTER*/
+          .newsletter .btnEmail{background: url("../images/btnMail-rtl.png") no-repeat scroll center center transparent;
+               &:hover{background-image: url("@{base-url}/btnMail-rtl-hover.png");}
+               
+          }
+     .account h3.modtitle{background-position: 95% center; padding: 25px 70px 30px 0;}
+	 .account .ezb-mod #form-login{
+		#modlgn_username, #modlgn_passwd{background-position: 95% center; padding-left: 0; padding-right: 40px;}
+	 }
+	 .account .ezb-mod #form-login-remember #modlgn_remember{float: right; margin-left: 10px; margin-right: 0;}
+	 .account .ezb-mod ul{margin: 0;}
+	 .mod_easyblogarchive .mod-year a{
+		padding: 0 30px 0 0 !important;
+		i{left: auto; right: 0;}
+	 }
+	 .ezb-mod .mod-avatar{float: right; margin: 0 0 0 10px;}
+     //Breadcrumb
+     ul.breadcrumb {
+          li {float: right;margin-right: 0px;margin-left: 10px;background: url("../images/rtl/arrow_breadcrumb.png") no-repeat scroll right center transparent;padding-left: 0px;padding-right: 12px;
+               &:first-child {background: url("../images/rtl/icon_home.png") no-repeat scroll right center transparent;padding-right: 25px;}
+          }
+     }
+     /* MODULE YT */
+     /*page*/
+	 .about-page div.g-pageteam .yt-lightbox.image-right{float: right; margin: 0 0 20px 20px;}
+	 .about-page div.g-pageteam .content-about .content .fa{float: right; margin-right: 0;margin-left: 15px; padding-left: 0; padding-right: 18px;}
+	 .gallery .tabs .tabs{margin-left: 10px; margin-right: 0;}
+    
+     #yt_menuposition #meganavigator{width: 100%;}
+     
+     #yt_top #flag .mod-languages{float: left; margin-right: 0;
+			a.dropdown-toggle{background-position: right center;padding: 8px 20px 8px 15px;}
+	 }   
+	#yt_top .yt-loginform > li{float: right;}
+	.box_support{float: left;
+		.modcontent .yt-support{
+			margin-left: 30px; margin-right: 0;
+			a{margin-right: 0; padding-left: 0; margin-left: 20px; padding-right: 25px; background-position: right center;}
+		}
+	}
+	#top2 .box_search{float: left;
+		.modcontent .form-inline{right: auto; left: 0;
+			.inputbox{left: 24px; right: auto;}
+			.btn{right: auto; left: 0;}
+		}
+	}
+	#yt_menuposition ul.navi ul.subnavi li{background-position: 95% center;
+		.item-link{}
+	}
+	.sj-slickslider .item-readmore{float: right;}
+    .sj-responsive-listing .respl-header .respl-categories ul.respl-cats li.respl-cat{
+		float: right;
+		margin-right: 0;
+		margin-left: 10px;
+		a{
+			background-position: 90% center;
+			padding: 8px 30px 9px 18px;
+		}
+	}     
+	.sj-responsive-listing .tab-content .item-inner{
+		.item-comments{
+			margin: 0 -10px;
+			a{
+				background-position: right center;				
+				padding-left: 0;
+				padding-right: 30px;
+				.icon{
+					background-image: url(../images/rtl/icon-viewcomments.png);
+					left: auto;
+					right: 50%;
+				}				
+			}
+		}
+		&:hover{
+			.item-comments a .icon{
+				left: auto;
+				right: 86%;
+			}
+		}
+	}
+        .respl-wrap{
+              .respl-loader{
+                    a.respl-button{background-position: 88% center; padding: 10px 42px 10px 35px;
+                          &:after{content: "\f104";  left: 50px; right: auto;}
+                        &:hover{background-color: darken(@linkColor,10%); text-decoration: none;
+                              &:after{ left: 20px; right: auto; }
+                        }
+                       
+                         
+                    }
+              }
+              .loading{
+                    a.respl-button{background: @background1; padding: 6px 0 6px 40px!important; text-align: right;}
+                }
+        }
+     
+     #k2Container .resplc-loadmore{
+          .resplc-loadmore-btn {background-position: 88% center; padding: 10px 42px 10px 35px;
+                &:before{content: "\f104";  left: 50px; right: auto;}
+                &:hover{background-color: darken(@linkColor,10%); text-decoration: none;
+                         &:before{ left: 20px; right: auto; }
+                    }
+          }
+          .loading{
+	    &.resplc-loadmore-btn{background: @background1; padding: 6px 0 6px 40px!important; text-align: right;}
+	}
+     }
+        
+     //blog
+     .resplc-loadmore{
+          .resplc-loadmore-btn{background-position: 88% center; padding: 10px 42px 10px 30px!important;
+               &:before{content: "\f104";  left: 50px; right: auto;}
+                &:hover{background-color: darken(@linkColor,10%); text-decoration: none;
+                         &:before{ left: 20px; right: auto; }
+                    }
+          }
+          
+     }
+     .loading{
+	    &.resplc-loadmore-btn{background: @background1; padding: 6px 0 6px 30px!important; text-align: right;}
+	}
+     
+     
+     
+	.yt-enjoy .modcontent .modcontent-text h2{background-position: right center; padding: 6px 40px 6px 6px;}
+	.sj-tabs .moduletabs.top-position .tabs-container ul.tabs li .tab{
+		background-position: 90% center;
+		padding: 8px 30px 9px 18px;
+	}
+	.sj-tabs .moduletabs.top-position .tabs-content-wrap .tab-content .k2ItemsBlock ul{
+		margin-left: 0;
+		margin-right: -2.5%;
+		li{
+			float: right;
+			margin-left: 0;
+			margin-right: 2.5%;
+			.item-inner .item-comments{
+				margin: 0 -10px;
+				a{
+					background-position: right center;					
+					padding-left: 0;
+					padding-right: 30px;
+					.icon{
+						background-image: url(../images/rtl/icon-viewcomments.png);
+						left: auto;
+						right: 50%;
+					}
+				}
+			}
+			&:hover{
+				.item-inner .item-comments a .icon{
+					left: auto;
+					right: 86%;
+				}
+			}
+		}
+	}
+	.sj-team .sj-extraslider .extraslider-inner .item-wrap.style4{
+		.item-image{
+			float: right;		
+		}
+		.item-info{
+			margin: 0 190px 0 0;
+			padding: 0 0 0 30px;
+			text-align: right;
+			.item-content .item-description, .item-social{text-align: right;}
+			.item-social .yt-socialbt{margin-left: 7px; margin-right: 0;}
+		}
+	}
+	#yt_spotlight8 .menu_bottom ul.menu{
+		float: left;
+		li{
+			float: right;
+		}
+	}
+	.module h3 span.badge{float: left;}
+	.tags ul li{float: right;}
+	.categories ul li a{background-position: right center;padding: 8px 27px 8px 0;}
+	#k2Container .itemList .catItem-in-right,
+	#eblog-wrapper #ezblog-body .blog-post .blog-content .blog-meta-right{
+		float: left;
+	}
+	#k2Container .itemList .itemContainer .catItemView, 
+	#eblog-wrapper #ezblog-body .blog-post .blog-content .blog-left,
+	#eblog-wrapper #ezblog-body .blog-post .blog-content .blog-left .blogitem-image{
+		float: right;
+	}
+	#eblog-wrapper #ezblog-body .blog-post .blog-content .blog-left .blogin-right{
+		margin-left: auto;
+		margin-right: 270px;
+		.blog-taglist span.tag-head{
+			float: right;
+		}
+	}
+        
+        #ezblog-menu .blog-navi .user-form form{padding: 5px;}
+	#eblog-wrapper #ezblog-body .blog-post .blog-content .blog-left .blogin-right .blog-meta > .in >span{
+		padding-left: 0;
+		padding-right: 25px;
+		background-position: right center;
+	}
+	#eblog-wrapper #comment-form .comment-content{margin-left: 0; margin-right: 75px;
+		.comment-head{margin-left: 0; margin-right: 20px;
+			.comment-name{float: right; display: inline-block; margin-left: 10px;}
+		}
+	}
+	#eblog-wrapper #comment-form .comment-content label.label{margin-left: 0; margin-right: 20px; }
+	#eblog-dialog .mrm, #eblog-wrapper .mrm{margin-left: 0; margin-right: 10px;}
+	#eblog-wrapper .blog-read .blog-head{
+		h1.blog-title{
+			float: right;
+		}
+		.blog-head-right{float: left;
+			ul li{
+				+ li{margin-right: 20px; margin-left: 0;}
+				&.bookmark{margin: 0;}
+			}
+		}
+	}
+	#ezblog-body .blog-brief .blog-meta, #ezblog-body .blog-brief .blog-option{margin-right: 0;
+		ul{margin: 0;
+			li{
+				+li{margin-left: 0; margin-right: 20px;}
+			}
+		}
+	}
+          //Easy blog
+        #ezblog-body .comment-content{
+          .prm{padding-right: 0;}
+          .mrm{margin-right: 0!important;}
+        }
+        
+        
+	#eblog-wrapper .comment-row .comment-body{border: 0;}
+	#eblog-wrapper #blog-comment .comment-content{margin: 0 100px 0 0;}
+	#ezblog-body .archive-list li.micro-post{background-position: right 12px; padding: 6px 25px 6px 0;}
+	#eblog-wrapper #ezblog-body #ezblog-bloggers .profile-avatar{margin-right: 0; margin-left: 10px;}
+	#eblog-wrapper .float-l, #eblog-wrapper .profile-avatar{margin-left: 10px;}
+	.latest-blogs .ezb-mod .mod-item .mod-post-image{margin: 0 0 10px 10px; float: right;}
+	.latest-blogs .ezb-mod .mod-item .mod-post-meta .post-comments a{float: right;}
+	#eblog-wrapper #blog-comment .comment-content .comment-author{float: right; padding-left: 15px;}
+	#ezblog-body .tag-featured{display: inline-block; line-height: normal;}
+	#ezblog-body .profile-sidebar{float: right;}
+	 /*---------------K2---------*/
+     
+     #k2Container{
+          .itemList .itemContainer .catItemView .catItemImageBlock .catItemImage{margin: 0 0 20px 20px;}
+          &.userView {
+               .userBlock{
+                    img{float: right; margin-left: 15px;}
+               }
+               .userItemList .userItemView{
+                    .userItemBody {
+						float: right;
+						.userItemImageBlock{float: right; margin: 0 0 20px 20px;}
+					}
+					.user-in-right{float: left;}
+               }
+          }
+          &.tagView .tagItemList .tagItemView {
+                .tagItemBody{
+					float: right;
+					.tagItemImageBlock{float: right; margin: 0 0 20px 20px;}
+				}
+               .tag-in-right{float: left;}
+          }
+          &.latestView .latestItemsContainer .catItemList .catItemView .latest-in-main{ 
+               .catItemImageBlock{float: right;
+                    .catItemImage{margin-right: 10px; margin-left: 20px; }
+               }               
+          }
+		  &.cols-2, &.cols-3, &.cols-4{
+				.latestItemsContainer .catItemList .catItemView .latest-in-main{ 
+				   .catItemImageBlock{float: none;
+						.catItemImage{margin: 0 0 20px; float: none; }
+				   }    
+			   }
+		  }
+     }
+	#k2Container.itemView .itemBody .itemRelated ul li.odd img, 
+	#k2Container.itemView .itemBody .itemRelated ul li.even img{
+		float: right;
+		margin: 6px 0 57px 25px;
+	}
+	#k2Container.itemView .itemBody .itemAuthorBlock img.itemAuthorAvatar,
+	#k2Container.itemView .itemComments .itemCommentsList li img{
+		float: right;
+		margin: 0 0 0 30px;
+	}
+	#k2Container.latestView .latestItemsContainer .catItemList .latest-in-right{
+		float: left;
+	}
+	#k2Container.latestView .latestItemsContainer .catItemList .catItemView .latest-in-main{
+		float: right;
+	}
+	#k2Container.latestView .latestItemsContainer .catItemList .catItemView.item1{
+		margin-right: 0;
+	}
+        
+        
+	#k2Container.itemView .itemBody .itemImageBlock span.itemImage{ text-align: right;}
+	div.itemAuthorLatest ul{margin-right: 0;}
+	div.itemTwitterButton, div.itemFacebookButton{float: right;}
+	.blog-featured .feature-in-right,
+	.blog .items-row .item .blog-in-right{float: left;}
+	.blog-featured .feature-in-main,.blog-featured .items-row .item .item-image,
+	.blog .items-row .item .blog-in-main, .blog .items-row .item .item-image{float: right;}
+	.item-page .article-info dl.article-info dd,
+	.blog .items-row .item .article-text .item-headinfo dl.article-info dd{margin-right: 0;}
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5,
+	.col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11,.col-lg-12{float: right;}
+        
+        
+        
+        
+      
+}
+
+/*Opera*/
+doesnotexist:-o-prefocus, .rtl #yt_top ul.yt-loginform > li > a:before{
+	margin-left: 0;
+	margin-right: 7px;
+}
+doesnotexist:-o-prefocus, .rtl #yt_top ul.yt-loginform > li > a:hover:before{
+	margin-left: 0;
+	margin-right: 3px;
+}
+doesnotexist:-o-prefocus, .rtl .mod-languages .dropdown-menu li{
+	direction: ltr;
+}

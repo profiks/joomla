@@ -1,0 +1,32 @@
+.blog  .resplc-loadmore,
+.blog-featured .resplc-loadmore{
+	display:block;
+	overflow:hidden;
+	text-align:center;
+	margin:20px auto;
+	clear:both;
+}
+
+.blog  .resplc-loadmore .resplc-loadmore-btn,
+.blog-featured  .resplc-loadmore .resplc-loadmore-btn{
+	padding:8px 12px;
+	display:inline-block;
+	background-color:#3E95D7;
+	color:#FFF;
+	cursor:pointer;
+}
+
+.blog   .resplc-loadmore .resplc-loadmore-btn .resplc-image-loading,
+.blog-featured    .resplc-loadmore .resplc-loadmore-btn .resplc-image-loading{
+	background:url('../images/301.GIF') no-repeat scroll center center transparent;
+	width:24px;
+	height:24px;
+	display:none;
+	margin-right:10px;
+	vertical-align:middle;
+}
+
+.blog  .resplc-loadmore .resplc-loadmore-btn:after,
+.blog-featured   .resplc-loadmore .resplc-loadmore-btn:after{
+	content: attr(data-rlc_label);
+}

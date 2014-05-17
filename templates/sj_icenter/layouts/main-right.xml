@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Responsive Grid: You can customize data Suffix.
+	wide	: Large desktops and high-resolution laptops (1200px and above)
+	normal	: Tablets landscape and laptops 			 (980px  between 1190px)
+	tablet 	: Larger tablets							 (767px  between 979px)
+	mobile 	: Standard smartphones 						 (767px  and on down)
+	
+Responsive Support Classes : The solution is hidden module on desktop,tablets & mobile. 
+	Add class suffix data- : hidden
+-->
+
+
+<layout type="mr">	
+	<head>
+	</head>
+	<groups>
+		<group class="span3" data-tablet="span12 first" >right</group>
+		<group 
+			   class="span9" 
+			   data-tablet="span12"
+			   
+			   noright-class="span12"
+			   noright-data-tablet="span12">main</group>
+	</groups>
+	<blocks>
+		<spotlight1 html5tag="section" order="1" id="yt_top">
+			<positions>
+				<position class="top1" data-tablet="" style="ytmod" type="modules">top1</position>
+				<position class="flag" data-tablet="" style="ytmod" type="modules">flag</position>
+				<position class="top2" data-tablet="" style="ytmod" type="modules">top2</position>
+			</positions>
+		</spotlight1>
+		<header html5tag="header" order="2" id="yt_header" autosize="0">
+			<positions>
+				<position class="span3" data-tablet="span4" type="feature">@logo</position>
+				<position class="span9" data-tablet="span8" type="feature">@menu</position>
+			</positions>
+		</header>
+		
+		<slideshow html5tag="section" order="3" id="yt_slideshow">
+			<positions>
+				<position class="span12" style="ytmod" type="modules">slideshow</position>
+			</positions>
+		</slideshow>
+		
+		<spotlight2 html5tag="section" order="4" id="yt_spotlight2">
+			<positions>
+				<position class="span12" style="ytmod" type="modules">top3</position>
+			</positions>
+		</spotlight2>
+		
+		<spotlight3 html5tag="section" order="4" id="yt_spotlight3">
+			<positions>
+				<position class="span12" style="ytmod" type="modules">top4</position>
+			</positions>
+		</spotlight3>
+		
+		<breadcrumb html5tag="section" order="4" id="yt_breadcrumb">
+			<positions>
+				<position class="span12" data-tablet="span12"  style="ytmod" type="modules">breadcrumb</position>
+			</positions>
+		</breadcrumb>
+		
+		<content html5tag="section" order="5" id="content" showDivTop="0" showDivBottom="0">
+			<positions>
+				<position class="span12 no-minheight" group="main" type="message"></position>
+				<position 
+					class="span12" 
+					
+					
+					noleft-class="span12" 
+					
+					
+					noright-class="span12" 
+					
+					
+					noleftright-class="span12" 
+					
+					 
+					group="main" type="component">component</position>
+				<position class="span12" data-normal="span12" data-tablet="span12" group="right" style="ytmod" type="modules">right</position>
+			</positions>
+		</content>
+		
+		<spotlight4 html5tag="section" order="6" id="yt_spotlight4">
+			<positions>
+				<position class="span12" data-normal="" style="ytmod" type="modules">bottom1</position>				
+			</positions>
+		</spotlight4>
+		
+		<spotlight5 html5tag="section" order="7" id="yt_spotlight5">
+			<positions>
+				<position class="span12" data-normal="" style="ytmod" type="modules">bottom2</position>				
+			</positions>
+		</spotlight5>	
+		
+		<spotlight6 html5tag="section" order="8" id="yt_spotlight6">
+			<positions>
+				<position class="span12" data-normal="" style="ytmod" type="modules">bottom3</position>				
+			</positions>
+		</spotlight6>
+		
+		<spotlight7 html5tag="section" order="9" id="yt_spotlight7">
+			<positions>
+				<position class="span12" data-normal="" style="ytmod" type="modules">bottom4</position>				
+			</positions>
+		</spotlight7>
+		
+		<spotlight8 html5tag="section" order="10" id="yt_spotlight8">
+			<positions>
+				<position class="span4" data-tablet="span12" style="ytmod" type="modules">bottom5</position>	
+				<position class="span8" data-tablet="span12" style="ytmod" type="modules">bottom6</position>					
+			</positions>
+		</spotlight8>
+		
+		<spotlight9 html5tag="section" order="11" id="yt_spotlight9">
+			<positions>
+				<position class="span12" data-normal="" style="ytmod" type="modules">footer</position>					
+			</positions>
+		</spotlight9>
+	
+		<footer html5tag="footer" order="12" id="yt_footer">
+			<positions>
+				<position class="span12" type="feature">@copyright</position>				
+			</positions>
+		</footer>
+		
+	</blocks>
+</layout>		

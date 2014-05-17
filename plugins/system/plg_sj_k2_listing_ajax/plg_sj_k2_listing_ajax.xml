@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_plg_sj_k2_listing_ajax</name>
+	<author>YouTech Company</author>
+	<creationDate>October 2013</creationDate>
+	<copyright>Copyright (c) 2009-2013 YouTech Company. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>1.0.0</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="plg_sj_k2_listing_ajax">plg_sj_k2_listing_ajax.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>assets</folder>
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.plg_system_plg_sj_k2_listing_ajax.ini</language>
+		<language tag="en-GB">en-GB.plg_system_plg_sj_k2_listing_ajax.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="limit"  type="text" size="25" default="4" label="Item Count" description="Item Count. 1 is minimum" />
+				<field name="path_template" type="text" default="" label="Path Template" description="Enter path of template. Example :templates/protostar/html/com_k2/templates/default" />
+				<field name="display_pagination"  type="radio" class="btn-group" default="0" label="Display Pagination" description="Allow show/hide pagination">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="include_jquery"  type="radio" class="btn-group" default="0" label="Include jQuery" description="Do you want include jQuery?">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>
+		 
+	</config>
+</extension>

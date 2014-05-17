@@ -1,0 +1,132 @@
+// --* Layouts Templates *-----------------
+// ----------------------------------------
+/*   1.Block Header
+ *   2.Block Mainmenu
+ *   3.Block Slideshow
+ *   4.Block Breadcrumb
+ *   5.Block Main Content
+ *   6.Block Spotlight
+ *   7.Block Footer
+ *   8.Layout Style
+ *   9.Block Topheader
+ *   
+ */
+body{
+	font-size: 12px;
+	a{color: @linkColor;
+		&:hover{text-decoration: none; color: @linkColorHover}
+	}
+}
+ 
+//1.Block Header
+
+#yt_top {height: 50px;position: relative; z-index: 1100;
+	.module,form {margin: 0;}
+}
+#yt_header{background:#fff;padding: 30px 0;width:100%; position: relative; z-index: 250; }
+
+//2.Block Mainmenu
+#top1, #flag{float: left;}
+#top2{float: right;}
+#yt_logoposition a{margin: 0;}
+//3.Block Slideshow
+
+
+.layout-boxed #yt_slideshow{
+    .bt-slideshow{top: 55%!important;}
+}
+#yt_slideshow{background: none;position: relative;}
+
+//4.Block Breadcrumb
+#yt_breadcrumb{padding:0px;position: relative;z-index: 1;
+     .module{margin: 0;}
+     h3.breadcrumb-title{display: none;}
+}
+
+//5.Block Main Content
+#yt_wrapper{
+	position: relative;box-shadow: 0 0 5px rgba(0,0,0,1);  .transition(all 0.3s ease-in-out 0s);
+	background:url("http://placehold.it/1920x704") no-repeat center top scroll #f4f4f4;
+}
+.homepage #content{padding: 0;background: transparent;
+	#yt_component{margin: 0;}
+	.item-page{margin: 30px 0;}
+}
+
+#content{background:#f4f4f4;padding:30px 0px 0px;position: relative;
+     #yt_component{clear: both;margin-bottom: 30px;}
+     .span12.no-minheight{min-height: 0;}
+}
+
+//6.Block Spotlight 
+#yt_spotlight1{padding: 30px 0; background: #F2F2F2;
+     .module{margin: 0;}
+}
+#yt_spotlight2{background: #F2F2F2; padding-top: 30px; 
+     h3.modtitle{margin-bottom: 20px;}
+     ul.menu li{padding: 2px 0;
+          a{color: #ccc;display: block;
+               &:hover{color: #fff;}
+          }
+     }
+}
+#yt_spotlight3 {padding: 30px 0 0;position: relative;background: url("http://placehold.it/1920x608") no-repeat scroll center top ;}
+
+#yt_spotlight4{clear: both;padding:30px 0 0;background:#fff;border: none;position: relative;z-index:1;}
+
+#yt_spotlight5{padding:30px 0px 0px;position: relative;background: #f4f4f4;}
+
+#yt_spotlight6 {background:#fff;overflow: hidden;position: relative; padding: 15px 0;
+	.sj-partner{ margin-bottom: 0;}
+}
+
+#yt_spotlight7 {padding:15px 0px;position: relative;background: url("http://placehold.it/1920x420") no-repeat scroll center top  transparent;background-size:100% 100%;}
+
+#yt_spotlight8{padding:20px 0;background:#000;border-bottom:solid 1px #111;border-top:none;
+	.module{margin: 0}
+}
+#yt_spotlight9{background: #000;
+	.module{margin: 30px 0 0;}
+}
+//7.Block Footer
+#yt_footer {padding: 0 0 30px 0; background: #000; border-top:none; text-align: center; background-color: #000!important;
+    
+    .pull-right{float: none;
+          .yt-socialbt {margin-top:0px;
+              a {height:53px;width:53px;border:solid 1px #3e3e3e;border-radius:10px;background:#000;color:#4d4d4d;box-shadow:none;
+                  i {font-size:2em;line-height:60px;}
+              }
+              .facebook{
+                  &:hover {color:#39599f;border-color:#39599f;margin-top:-20px;background:#000}
+              }
+              .twitter {
+                  &:hover {color:#45b0e3;border-color:#45b0e3;margin-top:-20px;background:#000}
+              }
+              .google-plus {
+                  &:hover {color:#b90027;border-color:#b90027;margin-top:-20px;background:#000}
+              }
+              .rss {
+                  &:hover {color:#dba629;border-color:#dba629;margin-top:-20px;background:#000}
+              }
+      }    } 
+    #yt_copyrightposition{text-align:center;padding:30px;padding-bottom:0px;color: #909090;
+        a {color:@linkColor;
+			&:hover {text-decoration:none;color:@white}
+        }
+    }
+}
+
+
+
+//8.Layout Style
+.container{width: 1170px;}
+div.row-fluid {
+     .first[class*="span"]{margin: 0;}
+     .span12{margin-left: 0 !important;margin-right: 0 !important; min-height: 20px;}
+     .hidden{display: none !important;}
+     [class*="span"]{min-height: 3px;}
+}
+
+@media (max-width: 1024px) {
+     #bd{width: 1190px;}
+}
