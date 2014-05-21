@@ -36,12 +36,9 @@ class YtTemplate extends YtFrameworkTemplate {
         <!-- 
         You CAN NOT remove (or unreadable) those links without permission. Removing the link and template sponsor Please visit smartaddons.com or contact with e-mail (contact@ytcvn.com) If you don't want to link back to smartaddons.com, you can always pay a link removal donation. This will allow you to use the template link free on one domain name. Also, kindly send me the site's url so I can include it on my list of verified users. 
         -->
-        <div class="footer1"><?php echo $lineone; ?>  Designed by 
-			<a href="http://www.smartaddons.com/" title="Visit SmartAddons!" target="_blank">SmartAddons.Com</a>,
-			<a target="_blank" href="http://www.smartaddons.com/joomla/templates/template-showcase">Joomla Templates</a>,
-			<a target="_blank" href="http://www.smartaddons.com/wordpress/themes">Wordpress Themes</a>
+        <div class="footer1"><?php echo $lineone; ?>  Designed by <a href="#">Denys Arkan </a>
 		</div>
-        <div class="footer2"><?php echo JText::_('MOD_FOOTER_LINE2'); ?></div>
+        
         <?php
 	}
 }
